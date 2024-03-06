@@ -1,0 +1,97 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo_list{
+
+  list-style: none;
+  margin: 12px;
+}
+
+.todo_main{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #eeee;
+  width: 450px;
+  margin: 150px auto 20px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0   8px rgba(0 ,0 , 0 ,0.4);
+
+}
+
+.todo_main p{
+
+  margin-bottom: 10px;
+  color: red;
+
+}
+
+.input_1{
+
+  width: 350px;
+  padding: 10px 0 10px 10px;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+.input_2{
+
+  width: 350px;
+  padding: 10px 0 10px 10px;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+.todo_btn{
+
+  background: green;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tode_list_main{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #eeee;
+  width: 350px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0 ,0 , 0 ,0.4);
+
+}
+
+.todo_list_btn{
+
+   display: flex;
+   column-gap: 20px;
+   
+}
+
+.add_btn{
+
+  background: green;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+
+}
