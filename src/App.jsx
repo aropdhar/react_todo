@@ -7,18 +7,22 @@ function App() {
   let [caption , setCaption] = useState("");
   let [arr , setArr] = useState([]);
   let [show , setShow] = useState(false);
+  let [index , setIndex] = useState("");
+
   let [error , setError] = useState({
 
     name: "",
     caption: ""
 
-  })
+  });
 
-  let [index , setIndex] = useState("")
 
   let nameregex = /^[a-zA-Z ]{4,40}$/;
 
-  let captionregex = /^[a-zA-Z ]{10,100}$/
+  let captionregex = /^[a-zA-Z ]{10,100}$/;
+
+
+
 
   let handletodo = () =>{
    
@@ -72,16 +76,16 @@ function App() {
 
     arr3.splice(index , 1);
 
-    setArr(arr3)
+    setArr(arr3);
      
   }
   
   let handleedit = (item , index) =>{
 
     setName(item.name);
-    setCaption(item.caption)
-    setShow(true)
-    setIndex(index)
+    setCaption(item.caption);
+    setShow(true);
+    setIndex(index);
   }
 
   let handleupdate = () =>{
@@ -106,7 +110,7 @@ function App() {
     <>
        
        <div className="todo_main">
-
+            <h1 className="heading_todo">Todo List</h1>
             <input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="Name" className="input_1"/> <br/>
             <p>{error.name}</p>
             <input value={caption} onChange={(e) => setCaption(e.target.value) } type="text" placeholder="caption" className="input_2"/> <br/>

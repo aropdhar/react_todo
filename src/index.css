@@ -95,3 +95,13 @@
   cursor: pointer;
 
 }
+
+.heading_todo{
+
+  margin-bottom: 20px;
+  background: linear-gradient(to right ,#fac404,green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
