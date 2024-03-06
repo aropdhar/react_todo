@@ -97,6 +97,8 @@ function App() {
     })
 
     setArr(arr4)
+    setName("")
+    setCaption("")
 
   }
 
